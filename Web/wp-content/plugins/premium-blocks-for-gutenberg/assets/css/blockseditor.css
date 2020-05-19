@@ -1,0 +1,174 @@
+/*.components-base-control__field .premium-components-select-control__input {
+  font-family: "FontAwesome", "Dashicons";
+  width: 100%;
+}*/
+/**
+* Global
+*/
+.components-panel__body .premium-panel-body-inner {
+  padding-left: 10px;
+}
+.components-panel__body
+  .premium-panel-body.is-opened
+  .components-panel__body-title,
+.components-panel__body
+  .premium-panel-body.is-opened
+  .components-panel__body-toggle,
+.components-panel__body
+  .premium-panel-body
+  .premium-panel-body-inner.is-opened
+  .components-panel__body-title,
+.components-panel__body
+  .premium-panel-body
+  .premium-panel-body-inner.is-opened
+  .components-panel__body-toggle {
+  background-color: #f3f4f5;
+}
+.components-panel__body
+  .premium-panel-body
+  .premium-panel-body-inner
+  .components-panel__body-title,
+.components-panel__body
+  .premium-panel-body
+  .premium-panel-body-inner
+  .components-panel__body-toggle {
+  background-color: #fff;
+}
+.components-panel__body .premium-panel-body-inner.is-opened {
+  padding-left: 26px;
+}
+.premium-text-control .components-base-control__help {
+  word-break: break-word;
+}
+/**************** Premium Dual Heading *****************/
+/*******************************************************/
+.premium-dheading-block__container .premium-headingc-true {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.premium-dheading-block__container .premium-headinga-true {
+  background-size: 300% 300% !important;
+  -webkit-animation: Gradient 10s ease-in-out infinite;
+  -moz-animation: Gradient 10s ease-in-out infinite;
+  animation: Gradient 10s ease-in-out infinite;
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/**************** Premium Banner ***********************/
+/*******************************************************/
+.premium-banner .button {
+  margin: 1em auto;
+  display: block;
+}
+.premium-banner .premium-banner__effect5 .premium-banner__title_wrap,
+.premium-banner .premium-banner__effect5 .premium-banner__desc_wrap {
+  z-index: 999;
+}
+/**************** Premium Testimonials *****************/
+/*******************************************************/
+.premium-testimonial__wrap .premium-testimonial__info {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+/**************** Premium Maps *************************/
+/*******************************************************/
+#wpwrap .edit-post-visual-editor .premium-maps__wrap h3.premium-maps__title {
+  margin-bottom: 0.2em;
+  font-weight: 600;
+  margin-top: 0;
+  padding: 0;
+}
+/********************** Buttons ************************/
+/*******************************************************/
+/*.premium-pricing-table .premium-pricing-table__button {
+  pointer-events: none;
+}
+.premium-pricing-table .premium-pricing-table__button .editor-url-input {
+  pointer-events: auto;
+}*/
+/**************** Premium Counter **********************/
+/*******************************************************/
+#wpwrap .edit-post-visual-editor .premium-countup__desc p,
+#wpwrap .edit-post-visual-editor .premium-icon-box__title,
+#wpwrap .edit-post-visual-editor .premium-icon-box__desc {
+  margin: 0;
+  padding: 0;
+}
+/**************** Premium Icon *************************/
+/*******************************************************/
+#wpwrap .edit-post-visual-editor .premium-icon,
+#wpwrap .edit-post-visual-editor .premium-countup__icon,
+#wpwrap .edit-post-visual-editor .premium-icon-box__icon,
+#wpwrap .edit-post-visual-editor .premium-video-box__play_icon {
+  font-style: normal;
+}
+.premium-icon__sidebar_icon {
+  text-align: center;
+}
+.premium-icon__sidebar_icon i {
+  font-size: 35px;
+}
+/**************** Premium Container ********************/
+/*******************************************************/
+.premium-container__content_wrap .editor-inner-blocks {
+  width: 100%;
+}
+#wpwrap .premium-container__full .editor-block-list__layout {
+  padding: 0;
+}
+/**************** Premium Accordion ********************/
+/*******************************************************/
+#wpwrap .edit-post-visual-editor .premium-repeater {
+  text-align: center;
+}
+#wpwrap .edit-post-visual-editor .premium-repeater-btn {
+  cursor: pointer;
+}
+#wpwrap .edit-post-visual-editor .premium-repeater-icon {
+  font-style: normal;
+  margin-right: 0.2em;
+}
+#wpwrap .edit-post-visual-editor .premium-accordion__desc {
+  margin-bottom: 0;
+}
+/**************** Premium Icon Box *********************/
+/*******************************************************/
+#wpwrap .edit-post-visual-editor .premium-icon-box__btn {
+  color: #000;
+}

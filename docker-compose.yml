@@ -1,0 +1,43 @@
+version: '3.3'
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        HOST: $HOST
+    container_name: jende_app
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      MYSQL_DATABASE: $MYSQL_DATABASE
+      MYSQL_USERNAME: $MYSQL_USERNAME
+      MYSQL_PASSWORD: $MYSQL_PASSWORD
+      MYSQL_HOST: $MYSQL_HOST
+      AUTH_KEY: $AUTH_KEY
+      SECURE_AUTH_KEY: $SECURE_AUTH_KEY
+      LOGGED_IN_KEY: $LOGGED_IN_KEY
+      NONCE_KEY: $NONCE_KEY
+      AUTH_SALT: $AUTH_SALT
+      SECURE_AUTH_SALT: $SECURE_AUTH_SALT
+      ENVIRONMENT: $ENVIRONMENT
+      HOST: $HOST
+    depends_on:
+      - db
+    volumes:
+      - ./Web:/app/
+  db:
+    image: mysql
+    container_name: jende_db
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
+      MYSQL_DATABASE: $MYSQL_DATABASE
+      MYSQL_USER: $MYSQL_USERNAME
+      MYSQL_PASSWORD: $MYSQL_PASSWORD
+volumes:
+  data: {}
